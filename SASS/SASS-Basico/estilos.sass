@@ -1,0 +1,27 @@
+$padding: 10px
+*
+    -moz-box-sizing: border-box
+    top: 0px
+    margin: 0px
+
+@mixin hijos($parametro1,$parametro2,$parametro3,$parametro4)
+    background-color: $parametro1
+    height: $parametro2
+    width: $parametro3
+    border: $parametro4
+    padding: $padding
+
+.contenedor
+    display: flex
+    flex-direction: column
+    place-items: center
+    width: 100vw
+    height: 100vh
+    &_hijo1
+        @include hijos(red,100px,200px,1px solid black)
+    &_hijo2
+        @include hijos(green,50px,50px,2px solid black)
+    &_hijo3
+        @include hijos(pink,25px,25px,3px solid black)       
+
+            
