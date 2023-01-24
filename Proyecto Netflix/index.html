@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoNetflix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            top: 0px;
+        }
+    </style>
+
+<body class="flex flex-col w-full gap-2 bg-rgb(34,34,34)">
+
+    <!--Caja de fondo-->
+    <section class="bg-[url('./Imagenes/ImagenFondoNetflix.jpeg')] w-[100%] h-[88vh] bg-cover ">
+        <!--Caja con gradienta-->
+        <div class="w-[100%] h-[100%] bg-gradient-to-b from-black/90 via-black/25 to-black/90">
+            <!--Barra de navegacion-->
+            <nav class="flex justify-between p-6 ml-8 mr-8">
+                <!--Logo-->
+                <img class="w-[132px] h-[44px]" src="./Imagenes/Logonetflix.png.webp" alt="">
+                <!--Seleccion de idioma-->
+                <div class="grid gap-1 grid-cols-2">
+                    <select class="w-[100px] h-[35px] bg-black text-white rounded-[0.1rem] text-center border-solid border-[1px] border-white font-[200]">
+                        <option>Español</option>
+                        <option>Ingles</option>
+                        <option>Frances</option>
+                        <option>Portugues</option>
+                        <option>Aleman</option>
+                    </select>
+                    <!--Boton de inicio-->
+                    <a href="https://www.netflix.com/login">
+                        <button class="text-white rounded bg-red-600 hover:bg-red-700 py-1.5 px-4 font-[200] ">Iniciar sesión</button>
+                    </a>
+                </div>
+            </nav>
+
+            <!--Contenido principal de inicio-->
+            <main class="text-white flex flex-col w-[100%] h-[450px] justify-center items-center font-[arial] gap-y-3 mt-16">
+                <h1 class="text-[50px] w-[620px] text-center">Películas y series ilimitadas y mucho más</h1>
+                <p class="text-2xl">Disfruta donde quieras. Cancela cuando quieras.</p>
+                <p class="text-xl mt-4">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
+                <div class="flex mt-2 gap-0.5">
+                    <input class="w-[480px] h-[60px] pl-4" type="text" placeholder="Email">
+                    <button class="flex items-center justify-center w-[185px] h-[60px] text-white bg-red-600 hover:bg-red-700 p-1 text-2xl">Comenzar</button>
+                </div>
+            </main>
+        </div>         
+    </section>    
+    <!--Seccion 2-->
+    <section class=" text-white flex h-[470px] w-[100%] bg-black "> 
+        <div class=" flex flex-col w-[50%] h-[100%] justify-center ">
+            <h1 class=" text-[50px] font-[arial] font-900 text-center ">Disfruta en tu TV</h1>
+            <p class=" text-[25px] font-[arial] text-start ">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
+        </div>
+        <div class="flex justify-center items-center w-[50%] h-[100%]"> 
+            <video class="absolute mt-[800px] our-story-card-video" data-uia="our-story-card-video" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"></video>
+            <img class="relative z-10 h-[100%]" src="./Imagenes/tv2daSeccion.png" alt="">
+        </div>
+    </section>
+
+    <!--Seccion 3-->
+    <section class="bg-black w-[100%] h-[470px] "> Section 3</section>
+
+    <!--Seccion 4-->
+    <section class="bg-black w-[100%] h-[470px] "> Section 4</section>
+
+    <!--Seccion 5-->
+    <section class="bg-black w-[100%] h-[470px] "> Section 5</section>
+
+    <!--Seccion 6-->
+    <section class="bg-black w-[100%] h-[470px] "> Section 6</section>
+
+    <!--Seccion del pie de pagina-->
+    <section class="bg-black w-[100%] h-[400px] "> Pie de pagina</section>
+</body>
+</html>
